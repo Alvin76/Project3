@@ -40,7 +40,7 @@ app.get('/todayscomic',function(req,res){
   });
 });
 
-app.post('/newRandom', function(req, res){
+app.post('/randomcomic', function(req, res){
   var randomInt = getRndInteger();
   var url = 'https://xkcd.com/' + randomInt + '/info.0.json';
   console.log(url);
