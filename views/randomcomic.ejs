@@ -34,8 +34,10 @@
            <button formaction="/newRandom" type="submit"> Random Comic </button>
          </div>
        </div>
-       <p class="comic-text"><%= title %></p>
-       <p class="comic-year"><%= year %></p>
+       <ul>
+         <li><p class="comic-text"><%= title %></p></li>
+         <li><p class="comic-year"><%= year %></p></li>
+       </ul>   
        <img src=<%= comic %> alt="comic">
      </div>
      </form>
