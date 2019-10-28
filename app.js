@@ -59,7 +59,7 @@ app.post('/newRandom', function(req, res){
   })
   });
 });
-
+/*
 app.get('/randomcomic',function(req,res){
   var randomInt = getRndInteger();
   var url = 'https://xkcd.com/' + randomInt + '/info.0.json';
@@ -79,7 +79,7 @@ app.get('/randomcomic',function(req,res){
   })
   });
 });
-
+*/
 http.createServer(app).listen(port, function(){});
 
 function getRndInteger(min, max) {
