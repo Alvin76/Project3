@@ -39,15 +39,14 @@ ul {
 
 
 body {
- /* padding-bottom:60px;   /* Height of the footer */ */
  background-color: #7c7c7d;
 }
 footer {
  text-align: center;
  bottom:0;
  width:100%;
- height:60px;   /* Height of the footer */
- background-color: gray;
+ height:60px;
+ border-width: 2px; border-color: black;  border-style: groove;
 }
 
 .center {

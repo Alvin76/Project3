@@ -15,36 +15,34 @@
   </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="/images/dumpster.png" width="30" height="30" class="d-inline-block align-top" alt="neet">
-        Git Gud
-      </a>
-    </nav>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href= />Home Page</a></li>
-        <li class="nav-item"><a class="nav-link" href= /todayscomic>Todays Comic</a> </li> <li class="nav-item"><a class="nav-link" href= /randomcomic>Random Comic</a> </li> </ul> </div> </nav> <form action="/newRandom" method="POST">
-              <div class="center">
-                <div class="jumbotron jumbotron-fluid">
-                  <div class="container">
-                    <h1 class="display-4">
-                      Random Comic
-                    </h1>
-                    <button formaction="/newRandom" type="submit"> Random Comic </button>
-                  </div>
-                </div>
-                <p class="comic-text"><%= title %></p>
-                <p class="comic-year"><%= year %></p>
-                <img src=<%= comic %> alt="comic">
-              </div>
-              </form>
-</body>
-<footer>
-  <p> &copy; 2019 Adam's assignmnet 3</p>
-</footer>
+        <li class="nav-item"><a class="nav-link" href= /todayscomic>Todays Comic</a> </li>
+        <li class="nav-item"><a class="nav-link" href= /randomcomic>Random Comic</a> </li>
+      </ul>
+   </div>
+  </nav>
+  <main>
+    <form action="/newRandom" method="POST">
+     <div class="center">
+       <div class="jumbotron jumbotron-fluid">
+         <div class="container">
+           <h1 class="display-4">
+             Random Comic
+           </h1>
+           <button formaction="/newRandom" type="submit"> Random Comic </button>
+         </div>
+       </div>
+       <p class="comic-text"><%= title %></p>
+       <p class="comic-year"><%= year %></p>
+       <img src=<%= comic %> alt="comic">
+     </div>
+     </form>
+  </main>
+  <footer>
+    <p> &copy; 2019 Adam's assignmnet 3</p>
+  </footer>
+  </body>
 
 </html>
