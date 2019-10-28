@@ -6,6 +6,9 @@ const axios = require("axios");
 var bodyParser = require("body-parser");
 const app = express();
 const port = process.env.PORT || 3000;
+var comic;
+var title;
+var year;
 console.log("Starting server on port 3000")
 app.set('views', path.join(__dirname, 'views'));
 app.set("view engine", "ejs");
@@ -21,9 +24,7 @@ app.get('/', function(req, res){
 
 app.get('/todayscomic',function(req,res){
   var url = "https://xkcd.com/info.0.json";
-  var comic;
-  var title;
-  var year;
+  //
   axios.get(url).then(function(response){
     console.log(response.data.img);
     comic = response.data.img;
@@ -43,9 +44,7 @@ app.post('/newRandom', function(req, res){
   var randomInt = getRndInteger();
   var url = 'https://xkcd.com/' + randomInt + '/info.0.json';
   console.log(url);
-  var comic;
-  var title;
-  var year;
+  //
   axios.get(url).then(function(response){
     console.log(response.data.img);
     comic = response.data.img;
@@ -65,9 +64,7 @@ app.get('/randomcomic',function(req,res){
   var randomInt = getRndInteger();
   var url = 'https://xkcd.com/' + randomInt + '/info.0.json';
   console.log(url);
-  var comic;
-  var title;
-  var year;
+  //
   axios.get(url).then(function(response){
     console.log(response.data.img);
     comic = response.data.img;
